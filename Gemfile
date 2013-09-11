@@ -32,12 +32,14 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+
 gem 'omniauth'
+gem 'omniauth-oauth2', '~> 1.0.2'
 gem 'omniauth-facebook'
 gem 'bcrypt-ruby'
 gem 'dotenv-rails', :groups => [:development, :test]
 gem 'omniauth-identity'
-
+gem 'omniauth-taskrabbit'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

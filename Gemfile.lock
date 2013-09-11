@@ -26,7 +26,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     arel (4.0.0)
-    atomic (1.1.13)
+    atomic (1.1.14)
     bcrypt-ruby (3.1.2)
     builder (3.1.4)
     coffee-rails (4.0.0)
@@ -72,14 +72,16 @@ GEM
     omniauth (1.1.4)
       hashie (>= 1.2, < 3)
       rack
-    omniauth-facebook (1.4.1)
-      omniauth-oauth2 (~> 1.1.0)
+    omniauth-facebook (1.4.0)
+      omniauth-oauth2 (~> 1.0.2)
     omniauth-identity (1.1.1)
       bcrypt-ruby (~> 3.0)
       omniauth (~> 1.0)
-    omniauth-oauth2 (1.1.1)
+    omniauth-oauth2 (1.0.3)
       oauth2 (~> 0.8.0)
       omniauth (~> 1.0)
+    omniauth-taskrabbit (0.0.1)
+      omniauth-oauth2 (~> 1.0.2)
     polyglot (0.3.3)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -144,6 +146,8 @@ DEPENDENCIES
   omniauth
   omniauth-facebook
   omniauth-identity
+  omniauth-oauth2 (~> 1.0.2)
+  omniauth-taskrabbit
   rails (= 4.0.0)
   sass-rails (~> 4.0.0)
   sdoc

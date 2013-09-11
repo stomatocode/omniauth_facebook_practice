@@ -1,13 +1,13 @@
 OmniauthTestApp::Application.routes.draw do
 
   get  '/login', :to => 'sessions#new', :as => :login
-  post '/auth/:facebook/callback', :to => 'sessions#create'
+  # post '/auth/:facebook/callback', :to => 'sessions#create'
   post '/auth/failure', :to => 'sessions#failure'
   get  '/auth/facebook/callback', :to => 'sessions#new'
 
   get '/auth/:provider/callback' => 'sessions#create'
 
-  resource :session
+  resources :session
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
